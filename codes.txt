@@ -1,0 +1,29 @@
+Flask code - 
+
+> python app.py
+
+
+
+To start docker -
+> docker
+
+Build Docker image - 
+> docker build -t mlops-docker-demo .
+
+Run the container - 
+> docker run -p 5000:5000 mlops-docker-demo
+
+Tag your image -
+> docker tag mlops-docker-demo hariprasad240/demo:latest1
+
+Login - 
+> docker Login
+
+Push image to Docker hub -
+> docker push hariprasad240/demo:latest1
+
+Pull image from Docker hub -
+> docker pull hariprasad240/demo:latest1
+
+Run the pulled image -
+> docker run -p 5000:5000 hariprasad240/demo:latest1
