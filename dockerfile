@@ -17,7 +17,7 @@ RUN pip install --no-cache-dir -r requirements.txt
 
 # EXPOSE - Specifies the port the container will  liston on.
 # Make a port 5000 available to the world outside this container
-EXPOSE 5000
+EXPOSE 5001
 
 # CMD or ENTRYPOINT - Defines the command that runs when the container starts.
 # Define environment variable

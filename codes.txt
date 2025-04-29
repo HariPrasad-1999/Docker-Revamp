@@ -7,6 +7,9 @@ Flask code -
 To start docker -
 > docker
 
+Login - 
+> docker login
+
 Build Docker image - 
 > docker build -t mlops-docker-demo .
 
@@ -14,16 +17,13 @@ Run the container -
 > docker run -p 5000:5000 mlops-docker-demo
 
 Tag your image -
-> docker tag mlops-docker-demo hariprasad240/demo:latest1
-
-Login - 
-> docker Login
+> docker tag mlops-docker-demo hariprasad240/mlops-docker-demo:latest
 
 Push image to Docker hub -
-> docker push hariprasad240/demo:latest1
+> docker push hariprasad240/mlops-docker-demo:latest
 
 Pull image from Docker hub -
-> docker pull hariprasad240/demo:latest1
+> docker pull hariprasad240/mlops-docker-demo:latest
 
-Run the pulled image -
-> docker run -p 5000:5000 hariprasad240/demo:latest1
+Run the container - 
+> docker run -p 5000:5000 hariprasad240/mlops-docker-demo
